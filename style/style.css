@@ -1,0 +1,299 @@
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8b8b8b;
+}
+
+body .container {
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: auto auto auto auto auto auto 250px;
+      grid-template-rows: auto auto auto auto auto auto 250px;
+  font-family: system-ui;
+}
+
+body .container .header {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4% 12% 8% auto 25%;
+      grid-template-columns: 4% 12% 8% auto 25%;
+  text-align: center;
+  margin-top: 0.2%;
+}
+
+body .container .header .change-image {
+  cursor: pointer;
+  border-radius: 10%;
+}
+
+body .container .header .change-image img {
+  width: 30px;
+  height: 30px;
+  border-radius: 10%;
+  border: 2px solid grey;
+}
+
+body .container .header .change-image img:hover {
+  border: 2px solid black;
+}
+
+body .container .header .language-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33px 33px 33px;
+      grid-template-columns: 33px 33px 33px;
+  -ms-grid-rows: 33px;
+      grid-template-rows: 33px;
+  margin-left: 15%;
+}
+
+body .container .header .language-container .english-language {
+  border: 2px solid #626262;
+  background-color: #626262;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  margin-left: 3%;
+}
+
+body .container .header .language-container .english-language:hover {
+  background-color: #b8b8b8;
+}
+
+body .container .header .language-container .russian-language {
+  border: 2px solid #626262;
+  background-color: #626262;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  margin-left: 3%;
+}
+
+body .container .header .language-container .russian-language:hover {
+  background-color: #b8b8b8;
+}
+
+body .container .header .language-container .belarussian-language {
+  border: 2px solid #626262;
+  background-color: #626262;
+  color: white;
+  cursor: pointer;
+  border-radius: 10%;
+  margin-left: 3%;
+}
+
+body .container .header .language-container .belarussian-language:hover {
+  background-color: #b8b8b8;
+}
+
+body .container .header .language-container .active-button {
+  background-color: black;
+  color: white;
+}
+
+body .container .header .switch-temperature-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33px 33px;
+      grid-template-columns: 33px 33px;
+  -ms-grid-rows: 33px;
+      grid-template-rows: 33px;
+  margin-left: 15%;
+  cursor: pointer;
+}
+
+body .container .header .switch-temperature-container .fahrenheit {
+  border: 2px solid #626262;
+  background-color: #626262;
+  color: white;
+  border-radius: 10%;
+  margin-left: 3%;
+}
+
+body .container .header .switch-temperature-container .fahrenheit:hover {
+  background-color: #b8b8b8;
+}
+
+body .container .header .switch-temperature-container .celsium {
+  border: 2px solid #626262;
+  background-color: #626262;
+  color: white;
+  border-radius: 10%;
+  margin-left: 3%;
+}
+
+body .container .header .switch-temperature-container .celsium:hover {
+  background-color: #b8b8b8;
+}
+
+body .container .header .switch-temperature-container .active-button {
+  background-color: black;
+  color: white;
+}
+
+body .container .header .search-city {
+  text-align: right;
+}
+
+body .container .header .search-city .dropdown {
+  text-align: right;
+  position: absolute;
+}
+
+body .container .header .search-city .dropdown .input {
+  background-color: #3a3a3a;
+  color: white;
+  width: 100%;
+  height: 28px;
+  border: 1px solid #acacac;
+  border-radius: 5%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  padding-left: 3%;
+}
+
+body .container .header .search-city .dropdown .dropdown-item {
+  width: auto;
+  display: block;
+  padding: 12px 16px;
+  color: white;
+  background-color: #646464;
+  text-decoration: none;
+  text-align: left;
+  border: 1px solid #3a3a3a;
+  -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+
+body .container .header .search-city .dropdown .dropdown-item:hover {
+  background-color: #3a3a3a;
+  color: white;
+}
+
+body .container .location {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+body .container .date {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+body .container .time {
+  text-align: center;
+  font-size: 30px;
+}
+
+body .container .icon {
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  text-align: center;
+}
+
+body .container .degree-container {
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+}
+
+body .container .degree-container .degree {
+  font-size: 40px;
+  text-align: center;
+}
+
+body .container .characteristics {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+body .container .temperature-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.3% 33.4% 33.3%;
+      grid-template-columns: 33.3% 33.4% 33.3%;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 30px;
+  margin-top: 2%;
+}
+
+body .container .temperature-container .second_day-container {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+}
+
+body .container .temperature-container .third_day-container {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+}
+
+body .container .temperature-container .fourth_day-container {
+  text-align: center;
+  display: block;
+  text-transform: capitalize;
+}
+
+body .container .map {
+  margin: 3%;
+}
+
+body .container .coordinates {
+  text-align: center;
+  display: block;
+  font-size: 20px;
+}
+
+body .container .coordinates .latitude {
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+}
+
+body .container .coordinates .longitude {
+  -webkit-transform: translateY(250%);
+          transform: translateY(250%);
+}
+
+@media screen and (max-width: 900px) {
+  body .container .header {
+    -ms-grid-columns: 4% 30% 15% auto 25%;
+        grid-template-columns: 4% 30% 15% auto 25%;
+  }
+}
+
+@media screen and (max-width: 490px) {
+  body .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto auto auto auto auto auto auto auto auto auto auto;
+        grid-template-rows: auto auto auto auto auto auto auto auto auto auto auto;
+  }
+  body .container .temperature-container {
+    display: block;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBaAf4GftjdxWEccQfr3M2sjJW9EJFcyaA&libraries=places" async defer></script>
+    <title>Fancy-weather</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="change-image">
+                <img src="./assets/img/placeholder.png" alt="img">
+            </div>
+            <div class="language-container">
+                <div class="english-language">En</div>
+                <div class="russian-language">Ru</div>
+                <div class="belarussian-language">Be</div>
+            </div>
+            <div class="switch-temperature-container">
+                <div class="fahrenheit">°F</div>
+                <div class="celsium">°C</div>
+            </div>
+            <div class="none"></div>
+            <div class="search-city">
+                <div id="myDropdown" class="dropdown">
+                    <input type="text" placeholder="Search city" id="myInput" class="input">
+                </div>
+            </div>
+        </div>
+        <div class="location"></div>
+        <div class="date"></div>
+        <div class="time"></div>
+        <div class="icon">
+            <canvas class="icon-canvas" width="100px" height="100px">Icon</canvas>
+        </div>
+        <div class="degree-container">
+            <div class="degree"></div>
+        </div>
+        <div class="characteristics">
+            <div class="description"></div>
+            <div class="wind"></div>
+            <div class="humidity"></div>
+        </div>
+        <div class="temperature-container">
+            <div class="second_day-container">
+                <div class="second-day"></div>
+                <div class="second-day-icon">
+                    <canvas class="second-icon-canvas" width="70px" height="70px"></canvas>
+                </div>
+                <div class="second-day-temperature"></div>
+            </div>
+            <div class="third_day-container">
+                <div class="third-day"></div>
+                <div class="third-day-icon">
+                    <canvas class="third-icon-canvas" width="70px" height="70px"></canvas>
+                </div>
+                <div class="third-day-temperature"></div>
+            </div>
+            <div class="fourth_day-container">
+                <div class="fourth-day"></div>
+                <div class="fourth-day-icon">
+                    <canvas class="fourth-icon-canvas" width="70px" height="70px"></canvas>
+                </div>
+                <div class="fourth-day-temperature"></div>
+            </div>
+        </div>
+        <div class="map" id="map"></div>
+        <div class="coordinates">
+            <div class="latitude"></div>
+            <div class="longitude"></div>
+        </div>
+    </div>
+    <script src="skycons.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
