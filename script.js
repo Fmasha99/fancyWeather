@@ -120,7 +120,6 @@ window.addEventListener('load', () => {
         .then(data => {
             if (data.predictions.length > 0) {
                 let cities = data.predictions.map((currentValue, index, array) => {
-                    console.log(currentValue);
                     let city = {name: currentValue.description, id: currentValue.place_id} 
                     return city;
                 });
@@ -130,7 +129,6 @@ window.addEventListener('load', () => {
    }
 
     function updateSuggestionList(cities) {
-        console.log('updateSuggestionList');
         div = document.getElementById("myDropdown");
         document.querySelectorAll('.dropdown-item').forEach(e => e.remove());
         for (i = 0; i < cities.length; i++) {
@@ -195,7 +193,6 @@ window.addEventListener('load', () => {
             return response.json();
         })
         .then(data => {
-            console.log(data)
             const {temperature, summary, windSpeed, humidity, icon} = data.currently;
             const timezoneCity = data.timezone;
 
@@ -400,7 +397,6 @@ window.addEventListener('load', () => {
         let city, country;
         geocoder.geocode({'latLng': latlng, 'region': language}, function(results, status) {
           if (status == google.maps.GeocoderStatus.OK) {
-          console.log(results)
             if (results[0]) {
              //formatted address
             //find country name
